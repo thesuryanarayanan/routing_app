@@ -22,7 +22,6 @@ This project provides comprehensive solutions for vehicle routing, delivery sche
 | PostgreSQL | Database management |
 | Lombok | Boilerplate code reduction |
 | GraphHopper (Jsprit) | Route optimization engine |
-| Spring Cloud OpenFeign | External API client |
 
 ## 🏗️ System Architecture
 
