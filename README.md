@@ -10,7 +10,6 @@ This project provides comprehensive solutions for vehicle routing, delivery sche
 - **⏰ Delivery Scheduling**: Time-window based delivery optimization for precise planning
 - **📍 Geographic Boundaries**: BoundingBox support for delivery zones and territories
 - **🔄 RESTful API**: Modern REST API endpoints for all operations
-- **🌐 External API Integration**: OpenRouteService integration for detailed route directions
 
 ## 🛠️ Technologies
 
@@ -22,7 +21,6 @@ This project provides comprehensive solutions for vehicle routing, delivery sche
 | PostgreSQL | Database management |
 | Lombok | Boilerplate code reduction |
 | GraphHopper (Jsprit) | Route optimization engine |
-| Spring Cloud OpenFeign | External API client |
 
 ## 🏗️ System Architecture
 
