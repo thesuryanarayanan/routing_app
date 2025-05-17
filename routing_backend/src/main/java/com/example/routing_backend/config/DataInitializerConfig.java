@@ -40,7 +40,7 @@ public class DataInitializerConfig {
         return args -> {
             if (ddlAuto.equals("create")) {
                 Branch branch = new Branch();
-                branch.setName("Sanko Şube");
+                branch.setName("Example Branch");
                 branch.setLatitude(41.1001871);
                 branch.setLongitude(28.8892948);
                 branch.setBoundingBoxLatitude1(41.1189);
